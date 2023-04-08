@@ -4,50 +4,47 @@
   <title>The Square</title>
   <style type="text/css">
     .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      margin: 20px;
+      display: table;
+      margin: 20px auto;
+      border-spacing: 20px;
     }
 
-    .square {
+    .cell {
+      display: table-cell;
       width: 100px;
       height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      text-align: center;
+      vertical-align: middle;
       font-size: 40px;
       font-weight: bold;
       color: #fff;
       border-radius: 10px;
       box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-      margin: 10px;
     }
 
-    .square:nth-child(1) { background-color: #ff6f69; }
-    .square:nth-child(2) { background-color: #ffcc5c; }
-    .square:nth-child(3) { background-color: #88d8b0; }
-    .square:nth-child(4) { background-color: #4a4e4d; }
-    .square:nth-child(5) { background-color: #9b4dca; }
-    .square:nth-child(6) { background-color: #4d4e4f; }
-    .square:nth-child(7) { background-color: #1abc9c; }
-    .square:nth-child(8) { background-color: #3498db; }
-    .square:nth-child(9) { background-color: #e67e22; }
+    .cell:nth-child(1) { background-color: #ff6f69; }
+    .cell:nth-child(2) { background-color: #ffcc5c; }
+    .cell:nth-child(3) { background-color: #88d8b0; }
+    .cell:nth-child(4) { background-color: #4a4e4d; }
+    .cell:nth-child(5) { background-color: #9b4dca; }
+    .cell:nth-child(6) { background-color: #4d4e4f; }
+    .cell:nth-child(7) { background-color: #1abc9c; }
+    .cell:nth-child(8) { background-color: #3498db; }
+    .cell:nth-child(9) { background-color: #e67e22; }
   </style>
 </head>
 <body>
   <h1>The Square</h1>
   <div class="container">
-    <div class="square">1</div>
-    <div class="square">2</div>
-    <div class="square">3</div>
-    <div class="square">4</div>
-    <div class="square">5</div>
-    <div class="square">6</div>
-    <div class="square">7</div>
-    <div class="square">8</div>
-    <div class="square">9</div>
+    <div class="cell">1</div>
+    <div class="cell">2</div>
+    <div class="cell">3</div>
+    <div class="cell">4</div>
+    <div class="cell">5</div>
+    <div class="cell">6</div>
+    <div class="cell">7</div>
+    <div class="cell">8</div>
+    <div class="cell">9</div>
   </div>
 </body>
 </html>
