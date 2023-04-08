@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>The Square</title>
-  <style type="stylesheet">
-    body {
-  background-color: #f1f1f1;
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-gap: 20px;
-  margin: 50px auto;
-  width: 340px;
-}
-
-.grid-item {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 50px;
-  text-align: center;
-  line-height: 100px;
-}
-  </style>
-</head>
-<body>
-  <h1>The Square</h1>
-  <div class="grid-container">
-    <div class="grid-item">1</div>
-    <div class="grid-item">2</div>
-    <div class="grid-item">3</div>
-    <div class="grid-item">4</div>
-    <div class="grid-item">5</div>
-    <div class="grid-item">6</div>
-    <div class="grid-item">7</div>
-    <div class="grid-item">8</div>
-    <div class="grid-item">9</div>
-  </div>
-</body>
+  <head>
+    <title>The Square</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 20px;
+      }
+      .square {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+        background-color: black;
+      }
+      .square:nth-child(2n) {
+        background-color: red;
+      }
+      .square:nth-child(3n) {
+        background-color: blue;
+      }
+      .square:nth-child(4n) {
+        background-color: green;
+      }
+      .square:nth-child(5n) {
+        background-color: yellow;
+      }
+      .square:nth-child(6n) {
+        background-color: purple;
+      }
+      .square:nth-child(7n) {
+        background-color: orange;
+      }
+      .square:nth-child(8n) {
+        background-color: gray;
+      }
+      .square:nth-child(9n) {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Square</h1>
+    <div class="grid-container">
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+      <div class="square">4</div>
+      <div class="square">5</div>
+      <div class="square">6</div>
+      <div class="square">7</div>
+      <div class="square">8</div>
+      <div class="square">9</div>
+    </div>
+  </body>
 </html>
