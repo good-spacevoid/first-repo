@@ -3,59 +3,60 @@
   <head>
     <title>The Square</title>
     <style>
-      .grid-container {
+      .grid {
         display: grid;
         grid-template-columns: repeat(3, 100px);
         grid-template-rows: repeat(3, 100px);
-        gap: 20px;
+        grid-gap: 20px;
       }
       .square {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 36px;
+        font-size: 24px;
         font-weight: bold;
-        color: white;
-        background-color: black;
       }
-      .square:nth-child(2n) {
-        background-color: red;
+      #square1 {
+        background-color: #FF5733;
       }
-      .square:nth-child(3n) {
-        background-color: blue;
+      #square2 {
+        background-color: #C70039;
       }
-      .square:nth-child(4n) {
-        background-color: green;
+      #square3 {
+        background-color: #900C3F;
       }
-      .square:nth-child(5n) {
-        background-color: yellow;
+      #square4 {
+        background-color: #581845;
       }
-      .square:nth-child(6n) {
-        background-color: purple;
+      #square5 {
+        background-color: #355C7D;
       }
-      .square:nth-child(7n) {
-        background-color: orange;
+      #square6 {
+        background-color: #008891;
       }
-      .square:nth-child(8n) {
-        background-color: gray;
+      #square7 {
+        background-color: #8FB339;
       }
-      .square:nth-child(9n) {
-        background-color: brown;
+      #square8 {
+        background-color: #FDB813;
+      }
+      #square9 {
+        background-color: #F15A22;
       }
     </style>
   </head>
   <body>
     <h1>The Square</h1>
-    <div class="grid-container">
-      <div class="square">1</div>
-      <div class="square">2</div>
-      <div class="square">3</div>
-      <div class="square">4</div>
-      <div class="square">5</div>
-      <div class="square">6</div>
-      <div class="square">7</div>
-      <div class="square">8</div>
-      <div class="square">9</div>
+    <div class="grid">
+      <div class="square" id="square1">1</div>
+      <div class="square" id="square2">2</div>
+      <div class="square" id="square3">3</div>
+      <div class="square" id="square4">4</div>
+      <div class="square" id="square5">5</div>
+      <div class="square" id="square6">6</div>
+      <div class="square" id="square7">7</div>
+      <div class="square" id="square8">8</div>
+      <div class="square" id="square9">9</div>
     </div>
   </body>
 </html>
