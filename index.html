@@ -1,109 +1,33 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>2x2 Grid of Squares</title>
     <style>
-      /* Center align content */
       body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        background-color: #D3D3D3;
+        text-align: center;
       }
-      /* Style for container element */
-      .container {
-        display: grid;
-        grid-template-rows: repeat(2, 100px);
-        grid-template-columns: repeat(2, 100px);
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-      }
-      /* Style for each square */
       .square {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100px;
         height: 100px;
-        font-size: 2em;
-        font-weight: bold;
-        color: black;
-      }
-      /* Colors for each square */
-      .arrangement1 .square:nth-child(1) { background-color: #f44336; }
-      .arrangement1 .square:nth-child(2) { background-color: #ff9800; }
-      .arrangement1 .square:nth-child(3) { background-color: #4caf50; }
-      .arrangement1 .square:nth-child(4) { background-color: #2196f3; }
-      .arrangement2 .square:nth-child(1) { background-color: #f44336; }
-      .arrangement2 .square:nth-child(2) { background-color: #4caf50; }
-      .arrangement2 .square:nth-child(3) { background-color: #ff9800; }
-      .arrangement2 .square:nth-child(4) { background-color: #2196f3; }
-      .arrangement3 .square:nth-child(1) { background-color: #f44336; }
-      .arrangement3 .square:nth-child(2) { background-color: #2196f3; }
-      .arrangement3 .square:nth-child(3) { background-color: #4caf50; }
-      .arrangement3 .square:nth-child(4) { background-color: #ff9800; }
-      .arrangement4 .square:nth-child(1) { background-color: #f44336; }
-      .arrangement4 .square:nth-child(2) { background-color: #2196f3; }
-      .arrangement4 .square:nth-child(3) { background-color: #ff9800; }
-      .arrangement4 .square:nth-child(4) { background-color: #4caf50; }
-      .arrangement5 .square:nth-child(1) { background-color: #f44336; }
-      .arrangement5 .square:nth-child(2) { background-color: #ff9800; }
-      .arrangement5 .square:nth-child(3) { background-color: #2196f3; }
-      .arrangement5 .square:nth-child(4) { background-color: #4caf50; }
-      .arrangement6 .square:nth-child(1) { background-color: #f44336; }
-      .arrangement6 .square:nth-child(2) { background-color: #4caf50; }
-      .arrangement6 .square:nth-child(3) { background-color: #2196f3; }
-      .arrangement6 .square:nth-child(4) { background-color: #ff9800; }
-      /* Style for the border around the arrangements */
-      .border {
-        border: 5px solid black;
-        padding: 20px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+        border: 2px solid black;
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 20px;
       }
     </style>
   </head>
   <body>
-    <div class="border">
-      <div class="arrangement1 container">
-        <div class="square">1</div>
-        <div class="square">2</div>
-        <div class="square">3</div>
-        <div class="square">4</div>
-      </div>
-      <div class="arrangement2 container">
-        <div class="square">1</div>
-        <div class="square">3</div>
-        <div class="square">2</div>
-        <div class="square">4</div>
-      </div>
-      <div class="arrangement3 container">
-        <div class="square">1</div>
-        <div class="square">4</div>
-        <div class="square">2</div>
-        <div class="square">3</div>
-      </div>
-      <div class="arrangement4 container">
-        <div class="square">1</div>
-        <div class="square">4</div>
-        <div class="square">3</div>
-        <div class="square">2</div>
-      </div>
-      <div class="arrangement5 container">
-        <div class="square">1</div>
-        <div class="square">2</div>
-        <div class="square">4</div>
-        <div class="square">3</div>
-      </div>
-      <div class="arrangement6 container">
-        <div class="square">1</div>
-        <div class="square">3</div>
-        <div class="square">4</div>
-        <div class="square">2</div>
-      </div>
+    <h1>The Squares</h1>
+    <div class="square">
+      <span>1</span>
+    </div>
+    <div class="square">
+      <span>2</span>
+    </div>
+    <div class="square">
+      <span>3</span>
+    </div>
+    <div class="square">
+      <span>4</span>
     </div>
   </body>
 </html>
-
