@@ -1,33 +1,26 @@
 <html>
-  <head>
-    <style>
-      body {
-        background-color: #D3D3D3;
-        text-align: center;
-      }
-      .square {
-        width: 100px;
-        height: 100px;
-        border: 2px solid black;
-        display: inline-block;
-        margin-right: 20px;
-        margin-bottom: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>The Squares</h1>
-    <div class="square">
-      <span>1</span>
-    </div>
-    <div class="square">
-      <span>2</span>
-    </div>
-    <div class="square">
-      <span>3</span>
-    </div>
-    <div class="square">
-      <span>4</span>
-    </div>
-  </body>
+<head>
+  <title>The Square</title>
+  <style>
+    #container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .square {
+      width: 100px;
+      padding: 20px;
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="square">1</div>
+    <div class="square">2</div>
+    <div class="square">3</div>
+    <div class="square">4</div>
+  </div>
+</body>
 </html>
