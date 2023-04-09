@@ -1,25 +1,38 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>The Square</title>
     <style>
-        .container{
-            display: flex;
-            justify-content: center;
-        }
-        .square{
+        #sqr1, #sqr2, #sqr3, #sqr4 {
             width: 100px;
             height: 100px;
-            margin: 10px;
+            background-color: #C4C4C4;
+            display:inline-block;
         }
     </style>
 </head>
 <body>
     <h1>The Square</h1>
-    <div class="container">
-        <div class="square">1</div>
-        <div class="square">2</div>
-        <div class="square">3</div>
-        <div class="square">4</div>
+    <div>
+        <div id="sqr1"></div>
+        <div id="sqr2"></div>
+    </div>
+    <div>
+        <div id="sqr3"></div>
+        <div id="sqr4"></div>
     </div>
 </body>
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        let mainDiv = document.querySelector("div");
+        mainDiv.style.margin = "0 auto";
+        mainDiv.style.width = "220px";
+        mainDiv.style.marginTop = "20px";
+        let sqrs = document.querySelectorAll("div[id^='sqr']");
+        sqrs.forEach(sqr => {
+            sqr.style.margin = "0 10px";
+        });
+    });
+</script>
