@@ -1,224 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Square</title>
+  <title>The Squares</title>
   <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-    }
-    h1 {
+    /* Define common styles */
+    .s {
+      width: 40px;
+      height: 40px;
+      border: 5px solid red;
       text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 30px;
     }
-    .s-c {
-      display: grid;
-      grid-template-columns: repeat(2, 100px);
-      grid-template-rows: repeat(2, 100px);
-      grid-gap: 20px;
+    .arr {
+      display: inline-block;
+      border: 5px solid black;
+      margin: 20px;
+    }
+    .block {
+      display: inline-block;
+      border: 5px solid blue;
+      margin: 20px;
+    }
+    .clear {
+      clear: both;
+    }
+    
+    /* Define arrangement styles */
+    .aa {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    .ab {
+      margin-bottom: 20px;
+    }
+    .ac {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    .ba {
+      margin-right: 20px;
+    }
+    .bb {
+      /* Empty */
+    }
+    .bc {
+      margin-left: 20px;
+    }
+    .ca {
+      margin-right: 20px;
       margin-top: 20px;
     }
-    .s {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 5px solid red;
-      font-size: 24px;
-      font-weight: bold;
+    .cb {
+      margin-top: 20px;
+    }
+    .cc {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    .da {
+      margin-right: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .db {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .dc {
+      margin-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    /* Define square number styles */
+    .nu {
+      color: black;
     }
   </style>
 </head>
 <body>
-  <h1>The Square</h1>
-  <!-- Arrangement 1 -->
-  <div class="s-c">
-    <div class="s ">1</div>
-    <div class="s ">2</div>
-    <div class="s ">3</div>
-    <div class="s ">4</div>
-  </div>
-
-  <!-- Arrangement 2 -->
-                <div class="s-c">
-    <div class="s ">1</div>
-    <div class="s ">2</div>
-    <div class="s ">4</div>
-    <div class="s ">3</div>
-  </div>
-
-  <!-- Arrangement 3 -->
-  <div class="s-c">
-    <div class="s ">1</div>
-    <div class="s ">3</div>
-    <div class="s ">2</div>
-    <div class="s ">4</div>
-  </div>
-
-  <!-- Arrangement 4 -->
-  <div class="s-c">
-    <div class="s ">1</div>
-    <div class="s ">4</div>
-    <div class="s ">2</div>
-    <div class="s ">3</div>
-  </div>
-
-  <!-- Arrangement 5 -->
-  <div class="s-c">
-    <div class="s ">2</div>
-    <div class="s ">1</div>
-    <div class="s ">4</div>
-    <div class="s ">3</div>
-  </div>
-
-  <!-- Arrangement 6 -->
-  <div class="s-c">
-    <div class="s ">3</div>
-    <div class="s ">1</div>
-    <div class="s ">4</div>
-    <div class="s ">2</div>
-  </div>
-  <!-- Arrangement 7 -->
-  <div class="s-c">
-    <div class="s ">2</div>
-    <div class="s ">1</div>
-    <div class="s ">3</div>
-    <div class="s ">4</div>
-  </div>
-
-  <!-- Arrangement 8 -->
-  <div class="s-c">
-    <div class="s">3</div>
-    <div class="s ">1</div>
-    <div class="s ">2</div>
-    <div class="s ">4</div>
-  </div>
-
-  <!-- Arrangement 9 -->
-  <div class="s-c">
-    <div class="s ">4</div>
-    <div class="s ">1</div>
-    <div class="s ">2</div>
-    <div class="s ">3</div>
-  </div>
-
-  <!-- Arrangement 10 -->
-  <div class="s-c">
-    <div class="s ">2</div>
-    <div class="s ">1</div>
-    <div class="s ">4</div>
-    <div class="s ">3</div>
-  </div>
-
-  <!-- Arrangement 11 -->
-  <div class="s-c">
-    <div class="s ">3</div>
-    <div class="s ">1</div>
-    <div class="s  ">4</div>
-    <div class="s ">2</div>
-  </div>
-
-  <!-- Arrangement 12 -->
-  <div class="s-c">
-    <div class="s ">4</div>
-    <div class="s ">1</div>
-    <div class="s ">3</div>
-    <div class="s ">2</div>
-  </div>
-  <!-- Arrangement 13 -->
-  <div class="s-c">
-    <div class="s ">1</div>
-    <div class="s ">2</div>
-    <div class="s ">3</div>
-    <div class="s ">4</div>
-  </div>
-
-  <!-- Arrangement 14 -->
-  <div class="s-c">
-    <div class="s ">1</div>
-    <div class="s ">2</div>
-    <div class="s ">4</div>
-    <div class="s ">3</div>
-  </div>
-
-  <!-- Arrangement 15 -->
-  <div class="s-c">
-    <div class="s ">1</div>
-    <div class="s ">3</div>
-    <div class="s ">2</div>
-    <div class="s ">4</div>
-  </div>
-
-  <!-- Arrangement 16 -->
-  <div class="s-c">
-    <div class="s ">1</div>
-    <div class="s ">4</div>
-    <div class="s ">2</div>
-    <div class="s ">3</div>
-  </div>
-
-  <!-- Arrangement 17 -->
-  <div class="s-c">
-    <div class="s ">2</div>
-    <div class="s ">1</div>
-    <div class="s ">3</div>
-    <div class="s ">4</div>
-  </div>
-
-  <!-- Arrangement 18 -->
-  <div class="s-c">
-    <div class="s ">2</div>
-    <div class="s ">1</div>
-    <div class="s ">4</div>
-    <div class="s ">3</div>
-  </div>
-  <!-- Arrangement 19 -->
-  <div class="s-c">
-    <div class="s ">3</div>
-    <div class="s ">1</div>
-    <div class="s ">2</div>
-    <div class="s ">4</div>
-  </div>
-
-  <!-- Arrangement 20 -->
-  <div class="s-c">
-    <div class="s ">3</div>
-    <div class="s ">1</div>
-    <div class="s ">4</div>
-    <div class="s ">2</div>
-  </div>
-
-  <!-- Arrangement 21 -->
-  <div class="s-c">
-    <div class="s ">4</div>
-    <div class="s ">1</div>
-    <div class="s ">2</div>
-    <div class="s ">3</div>
-  </div>
-
-  <!-- Arrangement 22 -->
-  <div class="s-c">
-    <div class="s ">4</div>
-    <div class="s ">1</div>
-    <div class="s ">3</div>
-    <div class="s ">2</div>
-  </div>
-
-  <!-- Arrangement 23 -->
-  <div class="s-c">
-    <div class="s ">4</div>
-    <div class="s ">2</div>
-    <div class="s ">1</div>
-    <div class="s ">3</div>
-  </div>
-
-  <!-- Arrangement 24 -->
-  <div class="s-c">
-    <div class="s ">4</div>
-    <div class="s ">3</div>
-    <div class="s ">1</div>
-    <div class="s ">2</div>
+  <h1>The Squares</h1>
+  <div class="block">
+    <div class="arr aa">
+      <div class="s"><span class="nu">1</span></div>
+      <div class="s"><span class="nu">2</span></div>
+      <div class="s"><span class="nu">3</span></div>
+      <div class="s"><span class="nu">4</span></div>
+    </div>
+    <div class="arr ab">
+      <div class="s"><span class="nu">1</span></div>
+      <div class="s"><span class="nu">2</span></div>
+      <div class="s"><span class="nu">4</span></div>
+      <div class="s"><span class="nu">3</span></div>
+    </div>
+    <div class="arr ac">
+      <div class="s"><span class="nu">1</span></div>
+      <div class="s"><span class="nu">3</span></div>
+      <div class="s"><span class="nu">2</span></div>
+      <div class="s"><span class="nu">4</span></div>
+    </div>
+    <div class="clear"></div>
+    <div class="arr ba">
+      <div class="s"><span class="nu">1</span></div>
+      <div class="s"><span class="nu">4</span></div>
+      <div class="s"><span class="nu">2</span></div>
+      <div class="s"><span class="nu">3</span></div>
+    </div>
+    <div class="arr bb">
+      <div class="s"><span class="nu">2</span></div>
+      <div class="s"><span class="nu">1</span></div>
+      <div class="s"><span class="nu">3</span></div>
+      <div class="s"><span class="nu">4</span></div>
+    </div>
+    <div class="arr bc">
+      <div class="s"><span class="nu">2</span></div>
+      <div class="s"><span class="nu">1</span></div>
+      <div class="s"><span class="nu">4</span></div>
+      <div class="s"><span class="nu">3</span></div>
+    </div>
+    <div class="clear"></div>
+    <div class="arr ca">
+      <div class="s"><span class="nu">3</span></div>
+      <div class="s"><span class="nu">1</span></div>
+      <div class="s"><span class="nu">2</span></div>
+      <div class="s"><span class="nu">4</span></div>
+    </div>
+    <div class="arr cb">
+      <div class="s"><span class="nu">3</span></div>
+      <div class="s"><span class="nu">2</span></div>
+      <div class="s"><span class="nu">1</span></div>
+      <div class="s"><span class="nu">4</span></div>
+    </div>
+    <div class="arr cc">
+      <div class="s"><span class="nu">4</span></div>
+      <div class="s"><span class="nu">1</span></div>
+      <div class="s"><span class="nu">2</span></div>
+      <div class="s"><span class="nu">3</span></div>
+    </div>
+    <div class="clear"></div>
+    <div class="arr da">
+      <div class="s"><span class="nu">4</span></div>
+      <div class="s"><span class="nu">1</span></div>
+      <div class="s"><span class="nu">3</span></div>
+      <div class="s"><span class="nu">2</span></div>
+    </div>
+    <div class="arr db">
+      <div class="s"><span class="nu">4</span></div>
+      <div class="s"><span class="nu">2</span></div>
+      <div class="s"><span class="nu">1</span></div>
+      <div class="s"><span class="nu">3</span></div>
+    </div>
+    <div class="arr dc">
+      <div class="s"><span class="nu">4</span></div>
+      <div class="s"><span class="nu">3</span></div>
+      <div class="s"><span class="nu">1</span></div>
+      <div class="s"><span class="nu">2</span></div>
+    </div>
+    <div class="clear"></div>
   </div>
 </body>
 </html>
